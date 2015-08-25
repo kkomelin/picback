@@ -1,2 +1,2 @@
-# picback
-Secret app ;)
+# Picback
+A secret app ;)
