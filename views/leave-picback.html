@@ -1,0 +1,13 @@
+<div class="leave-picback" ng-controller="PicbackLeavePicbackCtrl">
+  <div class="search-box">
+    <label for="search-phrase">Leave picback with pictures you like</label>
+    <input id="search-phrase" name="searchPhrase" ng-model="searchPhrase" ng-change="changeSearchPhrase(searchPhrase)" type="text" class="form-control" />
+  </div>
+  <div class="picture-container">
+    <div class="picture" ng-repeat="picture in results.photos.photo">
+      <span ng-if="picture.url_s" class="if-container">
+        <img ng-src="{{picture.url_s}}" alt="{{ picture.title }}" ng-class="{ 'sent': picture.sent == true }" ng-click="savePicback(picture)" />
+      </span>
+    </div>
+  </div>
+</div>

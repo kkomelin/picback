@@ -1,0 +1,7 @@
+<div ng-controller="PicbackListCtrl">
+  <div class="picture-container">
+    <div class="picture" ng-repeat="picback in picbacks track by $index">
+        <img ng-src="{{picback.url}}" alt="{{picback.nid}}" />
+    </div>
+  </div>
+</div>
