@@ -57,6 +57,7 @@ picbackControllers.controller('PicbackLeavePicbackCtrl', ['$scope', 'pbConfig', 
         }, function(response) {
             console.log('Error:');
             console.log(response);
+            alert("We apologise for the inconvenience but we had to shutdown Drupal 8 backend to save resources for projects with higher priorities.");
         });
     };
 
